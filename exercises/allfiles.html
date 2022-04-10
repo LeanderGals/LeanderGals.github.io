@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/normalize.css" media="screen">
+<link rel="stylesheet" href="css/reset.css" media="screen">
+<link rel="stylesheet" href="../css/js-collapsible.css">
+<title>All Files</title>
+<style>
+  
+body {
+  background-color: teal;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: gray;
+  color: paleturquoise;
+}
+.topnav a.active {
+  background-color: rgb(75, 75, 75);
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+p{
+  color: powderblue
+}
+a:hover{
+  color: powderblue;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(40, 61, 61);
+}
+
+@media screen and (max-width: 600px) {
+  .topnav li:not(:first-child) {
+      visibility: hidden;
+      
+      
+    }
+  .topnav a.icon {
+    float: none;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a{
+    float: none;
+    visibility: visible;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
 </head>
 <body>
-    
+<div class="header">
+
+<ul class="topnav" id="myTopnav">
+    <li><a href="#about" class="active">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+</ul>
+</div>
+
+
+<br>
+<img src="../profilecss/images/id pic1.jpg" alt="id" style="width:200px;height:200px;">
+    <h2>Leander Galasanay</h2>
+    <a href="">HTML Skills Challenge</a><br>
+    <a href="https://leandergals.github.io/exercises/css-box-models.html">Execise: Box Models</a><br>
+    <a href="https://leandergals.github.io/exercises/css-sizing.html">Exercise: Sizing Elements in CSS</a><br>
+    <a href="https://leandergals.github.io/exercises/apply-css.html">Exercise: Applying CSS to HTML document</a><br>
+    <a href="https://leandergals.github.io/exercises/css-display.html">Exercise: Using the display property</a><br>
+    <a href="https://leandergals.github.io/exercises/css-position.html">Exercise: Using the position property</a><br>
+    <a href="https://leandergals.github.io/exercises/css-float.html">Exercise: Using float and clear properties</a><br>
+    <a href="https://leandergals.github.io/exercises/js-collapsible.html">Exercise: Create Collapsible Navbar using JavaScript</a><br>
+
+
+    <br><br><br><br><br><br><br><br></p>
+    <img src="../profilecss/images/logo1.png" alt="logo" style="width:130px;height:80px;">
+<br><br>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className == "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
