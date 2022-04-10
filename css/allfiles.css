@@ -1,19 +1,35 @@
 h1 {text-align: center;
     
 }
-p{text-align: center;}
+p{
+    text-align: center;
+}
 h2 {font-size: 20px; text-align: center;}
 h3 {font-size: 20px; text-align: center;}
 h4 {font-size: 20px; text-align: center;}
-img{
-    display: block;margin-left: auto; 
-    margin-right: auto;}
+img{display: block;margin-left: auto; margin-right: auto;}
 body {background-image: url('../profilecss/images/bg.jpg'); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: white;           
 }
+.link{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:link {
+    color: green;
+  }
+a:visited {
+    color: green;
+  }
+a:hover {
+    color: red;
+  }
+a:active {
+    color: yellow;
+  }
 img{
 border-radius: 50%;
 }
