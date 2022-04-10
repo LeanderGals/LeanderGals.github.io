@@ -1,25 +1,42 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+}
 .container{height: 70vh;}
-        .box{
-            float: left;
-            padding:25px;
-            text-align: center;
-            color: white;           
-        }
-        #box1{
-            background-color: teal;
-            width: 98%;
-        }
-        #box2{
-            background-color: rgb(30, 146, 107);
-            height: 100%;
-            width: 5%;
-        }
-        #box3{
-            background-color: rgb(115, 202, 173);
-            height: 100%;
-            width: 87%;
-        }
-        #box4{
-            background-color: rgb(21, 109, 80);
-            width: 100%;
-        }
+.box{
+    padding:25px;
+    text-align: center;
+    color: white;
+    
+}
+#box1{
+    float: inherit;
+    min-height: 20%;
+    max-height: 20%;
+    text-align: center;
+    background-color: teal;
+
+}
+#box2{
+    float: left;
+    min-height: 102.7%;
+    max-height: 102.7%;
+    min-width: 15%;
+    background-color: rgb(30, 146, 107);
+
+}
+#box3{
+    float: none;
+    min-height: 102.7%;
+    max-height: 102.7%;
+    background-color: rgb(115, 202, 173);
+
+}
+#box4{
+    clear: both;
+    min-height: 20%;
+    max-height: 20%;
+    background-color: rgb(21, 109, 80);
+
+}
